@@ -146,3 +146,26 @@
   border-bottom: 3px solid #7e1616;
   transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 } */
+
+html {
+  scrollbar-gutter: stable;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 1px;
+}
+
+*::-webkit-scrollbar-track {
+  background: hsla(240, 1%, 17%, 0);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #7e1616;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-button {
+  width: 20px;
+}
