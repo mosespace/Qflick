@@ -1,9 +1,10 @@
 import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
-import Footer from "@/components/footer";
 import FAQ from "@/components/faqs";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import { Inter as FontSans } from "next/font/google";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -25,13 +26,14 @@ export default function RootLayout({
     <html lang='en' suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen bg-qBlack font-sans antialiased",
           fontSans.variable
         )}
       >
+        <Header />
         {children}
         {/* <FAQ /> */}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
