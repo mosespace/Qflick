@@ -1,3 +1,9 @@
+import HeroSection from "@/components/hero-section";
+
 export default function Home() {
-  return <main className=''>{/* Qflick */}</main>;
+  return (
+    <main className=''>
+      <HeroSection />
+    </main>
+  );
 }

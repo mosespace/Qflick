@@ -24,6 +24,10 @@ const config = {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       colors: {
+        qPrimary: "#7e1616",
+        qSecondary: "#dc2026",
+        qBlack: "#030303",
+        qYellow: "#ffd600",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

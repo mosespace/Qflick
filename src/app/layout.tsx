@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         {children}
         {/* <FAQ /> */}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
