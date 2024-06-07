@@ -95,7 +95,7 @@ const HeroSection = () => {
               height={2160}
               className='w-full h-full object-cover object-top'
             />
-            <div className='absolute inset-0 bg-gradient-to-r from-qBlack via-qBlack/90s to-transparent flex items-center px-[8rem] py-10'>
+            <div className='absolute inset-0 bg-gradient-to-r from-qBlack via-qBlack/90 to-transparent flex items-center px-[8rem] py-10'>
               <div className='px-8 max-w-5xl'>
                 <div className='text-white max-w-md'>
                   <div className='mb-2'>
