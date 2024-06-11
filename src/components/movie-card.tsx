@@ -75,18 +75,27 @@ export default function MovieCard() {
 
   return (
     <div className='container mx-auto p-4'>
-      <div className='text-center mb-8'>
-        <button className='text-red-600 text-lg font-bold'>NOW SHOWING</button>
-        <button className='text-gray-400 text-lg font-bold ml-4'>
+      <div className='text-center my-8'>
+        <Button
+          className='text-red-600 bg-qYellow hover:bg-qYellow/90 text-lg font-bold'
+          variant='ringHover'
+        >
+          NOW SHOWING
+        </Button>
+        <Button
+          className='text-gray-400 text-lg font-bold ml-4'
+          variant='linkHover1'
+        >
           COMING SOON
-        </button>
+        </Button>
       </div>
       <div className='grid grid-cols-1 mx-auto max-w-full sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4'>
         {movies.map((movie) => {
           return (
             <Link
               key={movie.id}
-              href=''
+              href={`/movies/${movie.id}`}
+              passHref
               className='border border-qYellow/20 rounded-lg p-2 shadow-lg'
             >
               <div className='w-full h-[40vh]'>

@@ -17,11 +17,10 @@ export const metadata: Metadata = {
     "Welcome to Qflick, the ultimate destination for movie enthusiasts! At Qflick, we believe that everyone should have easy access to a vast library of movies, all available to watch and download for free. Our platform offers a seamless experience, bringing you the best in film entertainment with just a few clicks.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+export default function RootLayout(props: {
   children: React.ReactNode;
-}>) {
+  modal: React.ReactNode;
+}) {
   return (
     <html lang='en' suppressHydrationWarning>
       <body
@@ -31,7 +30,9 @@ export default function RootLayout({
         )}
       >
         <Header />
-        {children}
+        {props.children}
+        {props.modal}
+        <div id='modal-root' />
         {/* <FAQ /> */}
         {/* <Footer /> */}
       </body>
